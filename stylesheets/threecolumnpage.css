@@ -1,0 +1,28 @@
+/*
+Jason Hope 
+Victus Technologies
+7/1/2018
+*/
+
+
+/* Standard styles that apply to whole page */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Column Management */
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 32px 45px;
+
+}
+@media screen and (max-width: 650px) {
+	.column {
+		width: 100%;
+		display: block;
+	}
+}

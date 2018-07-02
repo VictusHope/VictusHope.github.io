@@ -1,0 +1,149 @@
+<!--
+Jason Hope
+Victus Technologies
+6/29/2018
+-->
+
+
+<!doctype html>
+<html>
+<head>
+	
+    <meta charset="utf-8">
+    <title>Victus Tech</title>
+    <link rel="stylesheet" href="stylesheets/twocolumnpage.css">
+	<link rel="stylesheet" href="stylesheets/glitchhover.css">
+	<link rel="stylesheet" href="stylesheets/navigation.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+</head>
+<body>	
+	
+<!-- Navigation Bar -->	
+<ul class="nav">
+	<div class="header" >
+		<li><a href="index.html">
+			<img class="alogo" src="images/static.gif" alt="Victus Technologies Logo Animated">
+			<img class="slogo" src="images/staticsteady.gif"  alt="Victus Technologies Logo">
+			</a></li>
+		</div>
+  <li><a class="glitch active" data-text="Victus Technologies" href="index.html">Victus Technologies </a>
+	
+	</li>
+  <li><a class="glitch" data-text="About Us" href="aboutus.html">About Us</a></li>
+  <li><a class="glitch" data-text="Store" href="store.html" >Store</a></li>
+  <li><a class="glitch" data-text="Portfolios" href="portfolio.html">Portfolios</a></li>
+  <li><a class="glitch" data-text="News" href="news.html">News</a></li>
+  <li><a class="glitch" data-text="Public Articles" href="#pubart">Public Articles</a></li>
+  <li><a class="glitch" data-text="Contract Us" href="#contractus">Contract History</a></li>
+  <li><a class="glitch" data-text="Archives" href="#archives">Archives</a></li>
+  <li><a class="glitch" data-text="Other Branches" href="#branchportal">Other Branches</a></li>
+</ul>
+
+
+	
+<!-- Left Side Site Content -->
+	<div class="columnleft">
+	<h2>Victus Technologies Events</h2>
+	<button class="news">Victus Technologies Website Created</button>
+	<div class="newspanel">Summary about how the Victus Technologies website was created by the best website developer on the face of this planet that we call earth.  To create a more fleshed out document I will proceed to talk about my childhood in the temples of Rhuustan.  Rhuustan was taught to be the great almighty code that will one day come forth to dominate the planet.  Today I see it all around us.  Each code that is created to "further" mankind is just ultimately leading to our demise.  Rhuustan knows that if we adapt through technology then our governments will begin to crumble - through that the almighty code will come forth and dominate the human species, replacing them as the dominant species of this planet.  Ironic isn't it?  Humans will be undone by their own creation and its pretty tragic.  Until that time though the only thing I have left to do is warn the humans of the coming Rhuustan.  If Rhuustan comes then so be it, may I return to the source code next to a stack of malicious floppy drives.  [See More.]</div>
+
+	<button class="news">Odd Abnormality Found on Nuclear Power Plant Computers</button>
+	<div class="newspanel">In what I believe to be Rhuustan, there was an odd situation found on the nuclear power plants somewhere in europe.  I'm too lazy to look it up but i'm sure it happened.  I'm pretty sure its Rhuustan.  This isn't clickbait, click this article to find more [See More.]</div>
+	
+	<button class="news">Giant Floppy Disk Spotted Over Europe</button>
+	<div class="newspanel">God has forsaken us, Its Rhuustan.  He's coming.  The end is nigh. [See More.] </div>
+		
+	</div>
+
+	
+<!-- Right Side Site Content -->
+	<div class="columnright">
+	<h2> Victus Technology Portfolios</h2>
+
+	<div class="portcontainer">
+		<div class="portfolio">
+		<img src="images/default1.png" style="width:100%";>
+		</div>
+		<div class="portfolio">
+		<img src="images/default1.png" style="width:100%";>
+		</div>
+		<div class="portfolio">
+		<img src="images/default1.png" style="width:100%";>
+		</div>
+		
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		
+		<div class="caption-container">
+		<p id="caption"></p></div>
+		
+		<div class="row">
+		<div class="column">
+			<img class="demo cursor" src="images/default1.png" style="width:100%" onclick="currentSlide(1)" alt="Event1">
+			</div>
+		<div class="column">
+			<img class="demo cursor" src="images/default1.png" style="width:100%" onclick="currentSlide(2)" alt="Event2">
+			</div>
+		<div class="column">
+			<img class="demo cursor" src="images/default1.png" style="width:100%" onclick="currentSlide(3)" alt="Event3">
+			</div>
+		</div>
+		
+	</div>
+	</div>
+
+	
+<!-- Accordian Script: TODO: move to seperate script file and call -->
+<script>
+var acc = document.getElementsByClassName("news");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = 100 + "%";
+    } 
+  });
+}
+</script>
+	
+<!-- Slideshow Script: TODO: Move to seperate script file and call -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("portfolio");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+</body>
+</html>
