@@ -4,27 +4,18 @@ Victus Technologies
 6/29/2018
 */
 
-
-/* Standard styles that apply to whole page */
-body {
-	background: url(imagecalls/background.png);
-	margin: 0;
-	padding: 0;
-}
-h2 {
-	color: white;
-}
-
-
 /* Column Management */
 .columnleft {
 	float: left;
-	width: 48%;
+	width: 45%;
+	margin: 2em;
 }
 .columnright {
 	float: right;
-	width: 48%;
+	width: 45%;
+	margin: 2em;
 }
+
 
 
 

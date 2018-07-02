@@ -4,6 +4,18 @@ Victus Technologies
 7/2/2018
 */
 
+/* Standard styles that apply to whole page */
+body {
+	background: url(imagecalls/background.png);
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	color: white;
+}
+
+
 
 
 /* Logo Animation */
@@ -16,7 +28,7 @@ Victus Technologies
 .slogo{
 	border-radius: 100%;
 	display: block;
-	width: 120px;
+	width: 96px;
 }
 .header .alogo{
 	border-radius: 100%;
@@ -43,25 +55,33 @@ ul {
     list-style-type: none;
     overflow: hidden;
     margin: 0;
-	margin-right: 40%;
 	padding: 0;
 }
 li {
 	width: 100%;
 }
 li a {
-	margin-left: 15px;
-	background-color: #333;
+	background-color: #111;
     display: block;
-    color: white;
-    text-align: center;
-	width: 100%;
-	left: -60px;
-    padding: 15px 0px;
-    text-decoration: none;
-	z-index: 0;
+	text-decoration: none;
+	text-align: center;
 }
-li a:hover, .active {
-    background-color: #111;
+
+li a.glitch 
+{
+	font-size: 20px;
+    display: block;
+	width: 100%;
+	line-height: 96px;
+	padding: auto;
+    text-decoration: none;
+	text-align: center;
+}
+
+li a:hover{
+    background-color: #222;
+}
+.active{
+	background-color: #111;
 }
 

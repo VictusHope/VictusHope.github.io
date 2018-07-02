@@ -12,15 +12,6 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-body {
-	background-image: url(imagecalls/background.png);
-	margin: 0;
-	padding: 0;
-}
-h2 {
-	text-align: center;
-	color: white;
-}
 
 /* Column Management */
 .column {
@@ -34,48 +25,4 @@ h2 {
 		width: 100%;
 		display: block;
 	}
-}
-
-
-/* Generic Card Management */
-.cardcontainer {
-	padding: 0 16px;
-}
-.cardcontainer::after, .row::after{
-	content: "";
-	clear: both;
-	display: table;
-}
-.title {
-	color: white;
-}
-.button {
-	border: none;
-	outline: 0;
-	display: inline-block;
-	padding: 8px;
-	color: white;
-	background-color: black;
-	text-align: center;
-	width: 100%;
-}
-.button:hover {
-	background-color: #555;
-}
-
-
-/* Contact Card Management */
-.contactcard {
-	box-shadow: 0 8px 32px 0 white;
-	background: gray;
-}
-.cardimage {
-	width: 100%;
-}
-
-/* History Card Management */
-
-.historycard {
-	box-shadow: 0 8px 32px 0 white;
-	background: gray;
 }

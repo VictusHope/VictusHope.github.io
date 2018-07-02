@@ -22,20 +22,20 @@ a.glitch:before, .glitch:after {
   right: 0;
   overflow: hidden;
   background: none;
-  padding: 12px 8px;
+  line-height: 96px;
   clip: rect(0, 900px, 0, 0);
 }
 a.glitch:hover:before {
   color: #8D927E;
   left: 14px;
   text-shadow: 2px -1px #D5660D;
-  animation: glitch-effect-2 4.6 infinite linear alternate-reverse;
+  animation: glitch-effect 4.6 infinite linear alternate-reverse;
 }
 a.glitch:hover:after {
   color: #E2E7D3;
   left: -2px;
   text-shadow: -5px -2px #7F10B8;
-  animation: glitch-effect-2 2.2s infinite linear alternate-reverse;
+  animation: glitch-effect 2.2s infinite linear alternate-reverse;
 }
 
 
