@@ -1,0 +1,119 @@
+/*
+Jason Hope
+Victus Technologies
+6/29/2018
+*/
+
+
+/* Standard styles that apply to whole page */
+body {
+	background: url(imagecalls/background.png);
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	color: white;
+}
+
+
+/* Column Management */
+.columnleft {
+	float: left;
+	width: 48%;
+}
+.columnright {
+	float: right;
+	width: 48%;
+}
+
+
+
+/* Portfolio Container - Acts as a Slideshow and displays different links */
+.portcontainer {
+	position: relative;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 16.66%;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+/* News Container - Contains hyperlinks to different event pages */
+.news {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 12px;
+	transition: 0.4s;
+}
+.news:hover {
+	background-color: #ccc;
+}
+.news:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+.active:after {
+	content: "\2212";
+}
+.newspanel {
+	border-style: solid;
+	border-width: 2px;
+	font-size: 14px;
+	width: 95%;
+	padding: 0 12px;
+	background-color: lightgray;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}

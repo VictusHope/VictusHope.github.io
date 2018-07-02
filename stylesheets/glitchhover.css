@@ -1,0 +1,204 @@
+/*
+Jason Hope
+Victus Technologies
+6/29/2018
+*/
+
+
+/* Glitch Animation Globals */
+.glitch {
+  position: relative;
+  color: #9CB3BD;
+}
+
+
+
+/* Navigation Bar Glitch Formats */
+a.glitch:before, .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: none;
+  padding: 12px 8px;
+  clip: rect(0, 900px, 0, 0);
+}
+a.glitch:hover:before {
+  color: #8D927E;
+  left: 14px;
+  text-shadow: 2px -1px #D5660D;
+  animation: glitch-effect-2 4.6 infinite linear alternate-reverse;
+}
+a.glitch:hover:after {
+  color: #E2E7D3;
+  left: -2px;
+  text-shadow: -5px -2px #7F10B8;
+  animation: glitch-effect-2 2.2s infinite linear alternate-reverse;
+}
+
+
+
+/* Title Glitch Formats */
+.glitch:before, .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: none;
+
+  clip: rect(0, 900px, 0, 0);
+}
+.glitch:hover:before {
+  color: #8D927E;
+  left: 14px;
+  text-shadow: 2px -1px #D5660D;
+  animation: glitch-effect 5s infinite linear alternate-reverse;
+}
+.glitch:hover:after {
+  color: #E2E7D3;
+  left: -3px;
+  text-shadow: -5px -2px #7F10B8;
+  animation: glitch-effect 2.2s infinite linear alternate-reverse;
+}
+
+
+
+/* Glitch Animation Variations */
+/* --------------------------- */
+/* Title Screen */
+@keyframes glitch-effect {
+  0% {
+    clip: rect(28px, 9999px, 14px, 0);
+  }
+  5% {
+    clip: rect(47px, 9999px, 50px, 0);
+  }
+  10% {
+    clip: rect(58px, 9999px, 59px, 0);
+  }
+  15% {
+    clip: rect(4px, 9999px, 64px, 0);
+  }
+  20% {
+    clip: rect(85px, 9999px, 41px, 0);
+  }
+  25% {
+    clip: rect(90px, 9999px, 15px, 0);
+  }
+  30% {
+    clip: rect(100px, 9999px, 77px, 0);
+  }
+  35% {
+    clip: rect(24px, 9999px, 31px, 0);
+  }
+  40% {
+    clip: rect(44px, 9999px, 46px, 0);
+  }
+  45% {
+    clip: rect(14px, 9999px, 2px, 0);
+  }
+  50% {
+    clip: rect(15px, 9999px, 84px, 0);
+  }
+  55% {
+    clip: rect(69px, 9999px, 13px, 0);
+  }
+  60% {
+    clip: rect(29px, 9999px, 35px, 0);
+  }
+  65% {
+    clip: rect(95px, 9999px, 26px, 0);
+  }
+  70% {
+    clip: rect(87px, 9999px, 93px, 0);
+  }
+  75% {
+    clip: rect(23px, 9999px, 8px, 0);
+  }
+  80% {
+    clip: rect(11px, 9999px, 32px, 0);
+  }
+  85% {
+    clip: rect(15px, 9999px, 2px, 0);
+  }
+  90% {
+    clip: rect(41px, 9999px, 19px, 0);
+  }
+  95% {
+    clip: rect(34px, 9999px, 67px, 0);
+  }
+  100% {
+    clip: rect(82px, 9999px, 12px, 0);
+  }
+}
+
+/* Navigation Bar */
+@keyframes glitch-effect-2 {
+  0% {
+    clip: rect(22px, 9999px, 8px, 0);
+  }
+  5% {
+    clip: rect(11px, 9999px, 10px, 0);
+  }
+  10% {
+    clip: rect(48px, 9999px, 12px, 0);
+  }
+  15% {
+    clip: rect(1px, 9999px, 30px, 0);
+  }
+  20% {
+    clip: rect(26px, 9999px, 38px, 0);
+  }
+  25% {
+    clip: rect(18px, 9999px, 49px, 0);
+  }
+  30% {
+    clip: rect(45px, 9999px, 8px, 0);
+  }
+  35% {
+    clip: rect(19px, 9999px, 41px, 0);
+  }
+  40% {
+    clip: rect(31px, 9999px, 33px, 0);
+  }
+  45% {
+    clip: rect(7px, 9999px, 23px, 0);
+  }
+  50% {
+    clip: rect(30px, 9999px, 19px, 0);
+  }
+  55% {
+    clip: rect(19px, 9999px, 34px, 0);
+  }
+  60% {
+    clip: rect(25px, 9999px, 35px, 0);
+  }
+  65% {
+    clip: rect(18px, 9999px, 10px, 0);
+  }
+  70% {
+    clip: rect(13px, 9999px, 28px, 0);
+  }
+  75% {
+    clip: rect(25px, 9999px, 19px, 0);
+  }
+  80% {
+    clip: rect(21px, 9999px, 36px, 0);
+  }
+  85% {
+    clip: rect(54px, 9999px, 31px, 0);
+  }
+  90% {
+    clip: rect(29px, 9999px, 43px, 0);
+  }
+  95% {
+    clip: rect(47px, 9999px, 44px, 0);
+  }
+  100% {
+    clip: rect(45px, 9999px, 8px, 0);
+  }
+}
