@@ -22,7 +22,7 @@ a.glitch:before, .glitch:after {
   right: 0;
   overflow: hidden;
   background: none;
-  line-height: 96px;
+  line-height: 64px;
   clip: rect(0, 900px, 0, 0);
 }
 a.glitch:hover:before {

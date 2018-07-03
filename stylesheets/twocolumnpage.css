@@ -5,15 +5,18 @@ Victus Technologies
 */
 
 /* Column Management */
+.columnleft, .columnright {
+	margin-top: 3em;
+}
 .columnleft {
 	float: left;
-	width: 45%;
-	margin: 2em;
+	width: 40%;
+	margin-left: 8em;
 }
 .columnright {
 	float: right;
-	width: 45%;
-	margin: 2em;
+	width: 40%;
+	margin-right: 8em;
 }
 
 
