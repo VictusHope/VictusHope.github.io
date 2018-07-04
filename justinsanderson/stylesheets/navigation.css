@@ -1,0 +1,102 @@
+/*
+Jason Hope 
+Victus Technologies
+7/2/2018
+*/
+
+/* Standard styles that apply to whole page */
+#page{
+	box-sizing: border-box;
+	content: "";
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to top left, rgba(15, 15, 15, .5), rgba(10, 10, 15, 1));
+}
+
+body {
+	background: url(imagecalls/background5.jpg);
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	padding: 13px;
+}
+
+p {
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+/* Logo Animation */
+.header{
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	z-index: 99;
+}
+.slogo{
+	border-radius: 100%;
+	display: block;
+	width: 64px;
+}
+.header .alogo{
+	border-radius: 100%;
+	position: absolute;
+	display: none;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+}
+.header:hover .alogo{
+	display: inline;
+}
+
+
+
+/* Navigation Bar, Centered */ 
+.nav {
+	display: flex;
+	justify-content: center;
+
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+	padding: 0;
+}
+li {
+	width: 100%;
+}
+li a {
+	background-color: #111;
+    display: block;
+	text-decoration: none;
+	text-align: center;
+}
+li a.glitch {
+	font-size: 14px;
+    display: block;
+	width: 100%;
+	line-height: 64px;
+	padding: auto;
+    text-decoration: none;
+	text-align: center;
+}
+li a:hover{
+    background-color: #222;
+}
+.active{
+	background-color: #111;
+}
+
+p
