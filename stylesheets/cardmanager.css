@@ -9,42 +9,56 @@ Victus Technologies
 .cardcontainer {
 	padding: 0 16px;
 }
+
 .cardcontainer::after, .row::after{
 	content: "";
 	clear: both;
 	display: table;
+
 }
 .title {
-	color: white;
+	
+	text-align: center;
+	color: #E2E7D3;
 }
 .button {
 	border: none;
 	outline: 0;
 	display: inline-block;
 	padding: 8px;
-	color: white;
-	background-color: black;
+	color: #9CB3BD;
+	background-color: #122729;
 	text-align: center;
 	width: 100%;
 }
 .button:hover {
-	background-color: #555;
+	background-color: #88888E;
+	color: #E2E7D3;
+
 }
 
 
 /* Contact Card Management */
 .contactcard {
+	border-radius: 2.2%;
+	margin-bottom: 6em;
 	width: 100%;
-	box-shadow: 0 8px 32px 0 white;
-	background: gray;
+	background: #383c3e;
 }
 .cardimage {
 	width: 100%;
 }
 
+.portcard{
+	width: 100%;
+	background: #383c3e;
+}
 /* History Card Management */
 
 .historycard {
-	box-shadow: 0 8px 32px 0 white;
-	background: gray;
+
+	background: #383c3e;
+}
+p{
+	color: #E2E7D3;
 }

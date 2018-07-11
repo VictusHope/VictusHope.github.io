@@ -51,7 +51,7 @@ Victus Technologies
 }
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: #111;
   padding: 2px 16px;
   color: white;
 }
@@ -76,7 +76,7 @@ Victus Technologies
 
 /* News Container - Contains hyperlinks to different event pages */
 .news {
-	background-color: black;
+	background-color: #111;
 	color: white;
 	cursor: pointer;
 	padding: 18px;
@@ -88,11 +88,11 @@ Victus Technologies
 	transition: 0.4s;
 }
 .news:hover {
-	background-color: #ccc;
+	background-color: #222;
 }
 .news:after {
 	content: '\002B';
-	color: #777;
+	color: #383c3e;
 	font-weight: bold;
 	float: right;
 	margin-left: 5px;
@@ -106,7 +106,7 @@ Victus Technologies
 	font-size: 14px;
 	width: 95%;
 	padding: 0 12px;
-	background-color: lightgray;
+	background-color: #383c3e;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;

@@ -12,7 +12,6 @@ Victus Technologies
 	float: left;
 	width: 40%;
 	margin-left: 8em;
-	margin-top: 500px;
 }
 .columnright {
 	float: right;
@@ -77,11 +76,11 @@ Victus Technologies
 
 /* News Container - Contains hyperlinks to different event pages */
 .news {
-	background-color: black;
+	background-color: #111;
 	color: white;
 	cursor: pointer;
 	padding: 18px;
-	width: 100%;
+	width: 750px;
 	border: none;
 	text-align: left;
 	outline: none;
@@ -89,11 +88,11 @@ Victus Technologies
 	transition: 0.4s;
 }
 .news:hover {
-	background-color: #ccc;
+	background-color: #222;
 }
 .news:after {
 	content: '\002B';
-	color: #777;
+	color: #383c3e;
 	font-weight: bold;
 	float: right;
 	margin-left: 5px;
@@ -102,12 +101,11 @@ Victus Technologies
 	content: "\2212";
 }
 .newspanel {
-	border-style: solid;
-	border-width: 2px;
+	color: #E2E7D3;
 	font-size: 14px;
-	width: 95%;
+	width: 710px;
 	padding: 0 12px;
-	background-color: lightgray;
+	background-color: #383c3e;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
