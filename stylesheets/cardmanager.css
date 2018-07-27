@@ -17,10 +17,11 @@ Victus Technologies
 
 }
 .title {
-	
 	text-align: center;
 	color: #E2E7D3;
 }
+
+
 .button {
 	border: none;
 	outline: 0;
@@ -34,30 +35,32 @@ Victus Technologies
 .button:hover {
 	background-color: #88888E;
 	color: #E2E7D3;
-
+    
 }
 
 
 /* Contact Card Management */
-.contactcard {
-	border-radius: 2.2%;
-	margin-bottom: 6em;
-	width: 100%;
-	background: #383c3e;
-}
+
 .cardimage {
 	width: 100%;
 }
 
-.portcard{
+.contactcard{
 	width: 100%;
-	background: #383c3e;
+	list-style: none;
+	margin-bottom: 6em;
 }
+
+
+.servcard{
+	width: 100%;
+	list-style: none;
+}
+
 /* History Card Management */
 
 .historycard {
-
-	background: #383c3e;
+	padding: 0 0 12px;
 }
 p{
 	color: #E2E7D3;

@@ -1,0 +1,54 @@
+/*
+Jason Hope
+Victus Technologies
+7/12/2018
+*/
+
+/* Column Management */
+.columnleft, .columnright {
+}
+.column{
+    float: left;
+    width: 30%;
+}
+
+.cardcontainer{
+	margin: 1em;
+	background-color: rgba(25, 31, 31, 1)
+}
+
+img.cardimageleft {
+
+	padding: 0 16px;
+	width: 25%;
+	float: left;
+}
+
+img.cardimageright{
+
+	padding: 0 16px;
+	width: 25%;
+	float: right;
+}
+
+p.servtext{
+	margin: 1em;
+	padding: 3px;
+	color: white;
+}
+
+.servcardcontainerleft {
+	left: 1em;
+    position: absolute;
+	z-index: 99;
+	width: 13%;
+    background-color: rgba(25, 31, 31, 1);
+}
+
+.servcardcontainerright{
+	right: 1em;
+    position: absolute;
+	z-index: 99;
+	width: 13%;
+    background-color: rgba(25, 31, 31, 1);
+}

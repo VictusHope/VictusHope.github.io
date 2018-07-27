@@ -5,25 +5,56 @@ Victus Technologies
 */
 
 /* Column Management */
-.columnleft, .columnright {
-	margin-top: 3em;
-}
-.columnleft {
-	float: left;
-	width: 40%;
-	margin-left: 8em;
-}
-.columnright {
-	float: right;
-	width: 40%;
-	margin-right: 8em;
+.centerpiece{
+	position: relative;
+	margin: 2em;
 }
 
+.articlecolumnleft {
+    float: left;
+    width: 43%;
+    margin-left: 5em;
+}
+
+.articlecolumnright{
+    float: right;
+    width: 43%;
+    margin-right: 5em;
+}
+
+/*Card Management Overrides [See cardmanager.css]*/
+.cardcontainer {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    width: 65%;
+	padding: 0 16px;
+    background-color: rgba(25, 31, 31, 0.9);
+}
+.servcardcontainer {
+    position: absolute;
+	top: 2em;
+	left: 50%;
+	z-index: 99;
+	width: 35em;
+	padding: 0 16px;
+    background-color: rgba(25, 31, 31, 1);
+	transform: translate(-50%, -50%);
+}
+.contactcard {
+    position: relative;
+	margin-bottom: 6em;
+}
 
 
 
 /* Portfolio Container - Acts as a Slideshow and displays different links */
 .portcontainer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;   
+    list-style: none;
 	position: relative;
 }
 .prev,
@@ -50,11 +81,24 @@ Victus Technologies
   background-color: rgba(0, 0, 0, 0.8);
 }
 .caption-container {
+  font-style: italic;
+  font-size: 23px;
+  position: absolute;
+  top: 50%;
+  width: 150px;
   text-align: center;
-  background-color: #222;
+  background-color: rgba(25, 31, 31, 1);
   padding: 2px 16px;
   color: white;
 }
+
+.row{
+  position: absolute;
+  bottom: 8px; 
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .row:after {
   content: "";
   display: table;
@@ -62,7 +106,6 @@ Victus Technologies
 }
 .column {
   float: left;
-  width: 16.66%;
 }
 .demo {
   opacity: 0.6;
@@ -70,43 +113,4 @@ Victus Technologies
 .active,
 .demo:hover {
   opacity: 1;
-}
-
-
-
-/* News Container - Contains hyperlinks to different event pages */
-.news {
-	background-color: #111;
-	color: white;
-	cursor: pointer;
-	padding: 18px;
-	width: 750px;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 12px;
-	transition: 0.4s;
-}
-.news:hover {
-	background-color: #222;
-}
-.news:after {
-	content: '\002B';
-	color: #383c3e;
-	font-weight: bold;
-	float: right;
-	margin-left: 5px;
-}
-.active:after {
-	content: "\2212";
-}
-.newspanel {
-	color: #E2E7D3;
-	font-size: 14px;
-	width: 710px;
-	padding: 0 12px;
-	background-color: #383c3e;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
 }

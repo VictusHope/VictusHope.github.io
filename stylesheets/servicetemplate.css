@@ -1,0 +1,127 @@
+
+
+.columnleftr1, .columnrightr1 {
+	margin-top: 6em;
+}
+.columnleftr1{
+	margin-left: 5em;
+    float: left;
+    width: 42%;
+}
+
+.columnrightr1{
+	margin-right: 5em;
+    float: right;
+    width: 42%;
+}
+
+.columnleftr2 {
+	margin-left: 5em;
+	float: left;
+	width: 65%;
+}
+
+.columnrightr2{
+	margin-right: 5em;
+	float: right;
+	width: 25%;
+}
+
+.cardcontainer{
+
+	margin: 1em;
+	background-color: rgba(25, 31, 31, 1)
+}
+
+img.cardimage {
+
+	width: 100%;
+	float: left;
+}
+
+
+p.servtable{
+	text-align: center;
+	padding: 15px;
+}
+
+p.servtext{
+	padding: 15px;
+
+}
+
+p.italitext{
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* Table Properties */
+
+
+table {
+	float: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th.rates {
+	font-size: 18px;
+}
+
+td.rates {
+	font-size: 16px;
+}
+
+td.rates:nth-child(1){
+	width: 85%;
+}
+
+td.rates, th.rates {
+	border: 2px solid #dddddd;
+	text-align: left;
+	padding: 18px;
+	color: white;
+}
+
+
+tr.rates:nth-child(even) {
+    background-color:  rgba(25, 31, 31, 1);
+}
+
+tr.rates:nth-child(odd) {
+		background-color: rgba(41, 49, 49, 1)
+}
+
+
+
+th.hours {
+	font-size: 16px;
+
+}
+
+td.hours {
+	font-size: 14px;
+}
+
+td.hours:nth-child(1){
+	width: 45%;
+}
+
+td.hours, th.hours {
+	border: 2px solid #dddddd;
+	text-align: left;
+	padding: 18px;
+	color: white;
+
+}
+
+
+tr.hours:nth-child(even) {
+    background-color:  rgba(25, 31, 31, 1);
+}
+
+tr.hours:nth-child(odd) {
+		background-color: rgba(41, 49, 49, 1)
+}
+
+

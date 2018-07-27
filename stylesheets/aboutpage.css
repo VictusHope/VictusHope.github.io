@@ -1,0 +1,99 @@
+/*
+Jason Hope
+Victus Technologies
+7/12/2018
+*/
+
+/* Column Management */
+.columnleft, .columnright {
+	margin-top: 6em;
+}
+.columnleft {
+    float: left;
+    width: 42%;
+    margin-left: 8em;
+}
+
+.columnright {
+    float: right;
+    width: 42%;
+	margin-right: 8em;
+}
+
+
+/*Card Management Overrides [See cardmanager.css]*/
+.missioncard{
+	position: relative;
+    box-shadow: 4px 4px 8px 4px rgba(25, 31, 31, 0.5), 4px 6px 20px 4px rgba(25, 31, 31, 0.2);
+}
+
+.contactcard {
+    position: relative;
+    box-shadow: 4px 4px 8px 4px rgba(25, 31, 31, 0.5), 4px 6px 20px 4px rgba(25, 31, 31, 0.2);
+}
+
+.cardcontainer {
+    position: absolute;
+    bottom: 8px;
+	right: 16px;
+	width: 75%;
+    height: 0%;
+	padding: 14px;
+    background-color: rgba(14, 21, 21, 0.85);
+	transition: 1s ease;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.contactcard:hover .cardcontainer{
+	height: 75%;
+	opacity: 1;
+}
+
+
+
+.missioncardcontainer {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+    width: 65%;
+	padding: 8px;
+    background-color: rgba(14, 21, 21, 0.85);
+	transform: translate(-50%);
+	transition: .5s ease;
+	opacity: 0;
+	overflow: auto;
+}
+
+.missioncard:hover .missioncardcontainer {
+	opacity: 1;
+}
+
+
+
+.missionstatement{
+	margin: 1em;
+	padding: 0 10px 0 0;
+	font-size: 18px;
+	text-indent: 65px;
+	line-height: 1.6;
+	text-shadow: 2px 3px black;
+}
+
+.aboutme{
+	margin: 1em;
+	padding: 0 10px 0 0;
+	font-size: 14px;
+	text-indent: 35px;
+	line-height: 1.1;
+	text-shadow: 1px 2px black;
+}
+
+h2.founder {
+	text-align: left;
+	text-shadow: 2px 3px black;
+	font-size: 22px;
+	padding: 5px;
+	margin: 0;
+	margin-top: 1em;
+}

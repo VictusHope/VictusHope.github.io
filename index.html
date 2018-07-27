@@ -12,6 +12,7 @@ Victus Technologies
     <meta charset="utf-8">
     <title>Victus Tech</title>
     <link rel="stylesheet" href="stylesheets/homepage.css">
+    <link rel="stylesheet" href="stylesheets/cardmanager.css">
 	<link rel="stylesheet" href="stylesheets/glitchhover.css">
 	<link rel="stylesheet" href="stylesheets/navigation.css">
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -22,7 +23,7 @@ Victus Technologies
 <!-- Navigation Bar -->	
 <ul class="nav">
 	<div class="header" >
-		<li><a href="/index.html">
+		<li><a class="active" href="/index.html">
 			<img class="alogo" src="images/static.gif" alt="Victus Technologies Logo Animated">
 			<img class="slogo" src="images/staticsteady.gif"  alt="Victus Technologies Logo">
 			</a></li>
@@ -31,41 +32,27 @@ Victus Technologies
 	
 	</li>
   <li><a class="glitch" data-text="About Us" href="/aboutus.html">About Us</a></li>
-  <li><a class="glitch" data-text="Store[Disabled]">Store[Disabled]</a></li>
-  <li><a class="glitch" data-text="Portfolios" href="/portfolio.html">Portfolios</a></li>
+  <li><a class="glitch" data-text="Store" href="/store.html">Store</a></li>
+  <li><a class="glitch" data-text="Services" href="/portfolio.html">Services</a></li>
   <li><a class="glitch" data-text="News" href="/news.html">News</a></li>
   <li><a class="glitch" data-text="Contract History[Disabled]">Contract History[Disabled]</a></li>
   <li><a class="glitch" data-text="Archives[Disabled]">Archives[Disabled]</a></li>
   <li><a class="glitch" data-text="Portal[Disabled]">Portal[Disabled]</a></li>
 </ul>
 	
-<!-- Left Side Site Content -->
-	<div class="columnleft">
-	<h2>Victus Technologies Events</h2>
-	<button class="news">Victus Technologies Website Created</button>
-	<div class="newspanel">Summary about how the Victus Technologies website was created by the best website developer on the face of this planet that we call earth.  To create a more fleshed out document I will proceed to talk about my childhood in the temples of Rhuustan.  Rhuustan was taught to be the great almighty code that will one day come forth to dominate the planet.  Today I see it all around us.  Each code that is created to "further" mankind is just ultimately leading to our demise.  Rhuustan knows that if we adapt through technology then our governments will begin to crumble - through that the almighty code will come forth and dominate the human species, replacing them as the dominant species of this planet.  Ironic isn't it?  Humans will be undone by their own creation and its pretty tragic.  Until that time though the only thing I have left to do is warn the humans of the coming Rhuustan.  If Rhuustan comes then so be it, may I return to the source code next to a stack of malicious floppy drives.  [See More.]</div>
-
-	<button class="news">Odd Abnormality Found on Nuclear Power Plant Computers</button>
-	<div class="newspanel">In what I believe to be Rhuustan, there was an odd situation found on the nuclear power plants somewhere in europe.  I'm too lazy to look it up but i'm sure it happened.  I'm pretty sure its Rhuustan.  This isn't clickbait, click this article to find more [See More.]</div>
-	
-	<button class="news">Giant Floppy Disk Spotted Over Europe</button>
-	<div class="newspanel">God has forsaken us, Its Rhuustan.  He's coming.  The end is nigh. [See More.] </div>
-		
-	</div>
-
-<!-- Right Side Site Content -->
-	<div class="columnright">
-	<h2> Victus Technology Portfolios</h2>
-
+<div class="centerpiece">
+<div class ="servcardcontainer">
+<h2> Victus Technology Services</h2>
+</div>
 	<div class="portcontainer">
 		<div class="portfolio">
-		<img src="images/default1.png" style="width:100%";>
+		<img src="images/stock-trainspeed.jpg" style="width:100%">
 		</div>
 		<div class="portfolio">
-		<img src="images/default1.png" style="width:100%";>
+		<img src="images/stock-underground.jpg" style="width:100%">
 		</div>
 		<div class="portfolio">
-		<img src="images/default1.png" style="width:100%";>
+		<img src="images/stock-keyboard.jpg" style="width:100%">
 		</div>
 		
 		
@@ -77,38 +64,64 @@ Victus Technologies
 		
 		<div class="row">
 		<div class="column">
-			<img class="demo cursor" src="images/default1.png" style="width:100%" onclick="currentSlide(1)" alt="Event1">
+			<img class="demo cursor" src="images/stock-trainspeed.jpg" style="width: 100px" onclick="currentSlide(1)" alt="Web Design">
 			</div>
 		<div class="column">
-			<img class="demo cursor" src="images/default1.png" style="width:100%" onclick="currentSlide(2)" alt="Event2">
+			<img class="demo cursor" src="images/stock-underground.jpg" style="width: 100px"  onclick="currentSlide(2)" alt="App Design">
 			</div>
 		<div class="column">
-			<img class="demo cursor" src="images/default1.png" style="width:100%" onclick="currentSlide(3)" alt="Event3">
+			<img class="demo cursor" src="images/stock-keyboard.jpg" style="width: 100px"  onclick="currentSlide(3)" alt="Graphic Design">
 			</div>
 		</div>
 		
 	</div>
 	</div>
 
+<h2>Recent Articles</h2>     
+    <div class="articlecolumnleft">
+ 
+			<div class="contactcard">
+			<img class="cardimage" src="images/jengasiege.jpg">
+			<div class ="cardcontainer">
+				<h2>Nation Taken By Storm After New Game Jenga Siege Takes Over Urban Nightlife, Locals Not Thrilled.</h2>
+				<p>"Somebody 'oughta do something about this, man. It's ruined everything that used to be good about going out at night. I'm so tired of going to take a drink and getting nailed by a bean-bag. So tired." </p>
+			</div>
 
+		</div>
+    
+        	<div class="contactcard">
+			<img class="cardimage" src="images/stock-darkhallway.jpg">
+			<div class ="cardcontainer">
+				<h2>Consumers Desire Less Clickbait, We Fail To Deliver</h2>
+				<p>"Lol these dudes won't even make normal articles.  Trash news source.  They have a pretty kickass website though, I might get that dude to make me one"</p>
+			</div>
+
+		</div>
 	
-<!-- Accordian Script: TODO: move to seperate script file and call -->
-<script>
-var acc = document.getElementsByClassName("news");
-var i;
+    </div>
+            
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = 100 + "%";
-    } 
-  });
-}
-</script>
+            
+    <div class="articlecolumnright">
+			<div class="contactcard">
+			<img class="cardimage" src="images/stock-policesirens.jpg">
+			<div class ="cardcontainer">
+				<h2>Sources Say We Need Better Headlines</h2>
+				<p>We Say Fuck You</p>
+			</div>
+
+		</div>
+    
+        			<div class="contactcard">
+			<img class="cardimage" src="images/stock-ambientlight.jpg">
+			<div class ="cardcontainer">
+				<h2>Store Shut Down Temporarily - An Angry Mob Consisting of Three People Outside Our Headquarters</h2>
+				<p>"We weren't expecting to be selling anything so soon so we had about 128kb of memory allocated to our store.  The first customer to buy something ended up with a $200 bill since he crashed our servers."</p>
+			</div>
+
+		</div>
+	
+    </div>
 	
 <!-- Slideshow Script: TODO: Move to seperate script file and call -->
 <script>
@@ -141,6 +154,6 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
-	</div>
+</div>
 </body>
 </html>

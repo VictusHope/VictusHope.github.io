@@ -1,0 +1,93 @@
+/*
+Jason Hope
+Victus Technologies
+6/29/2018
+*/
+/*Custom Card for Article Templates built off of [cardmanager.css] */
+
+
+
+/* Fonting */
+.title {
+	font-size: 24px;
+	font-style: bold;
+}
+
+.author {
+	font-size: 14px;
+	font-style: bold;
+}
+
+p{
+	color: #E2E7D3;
+}
+
+
+
+
+/* Image Management */
+
+img.cardimage {
+	margin-left: 4em;
+	float: left;
+	width: 550px;
+	padding: 0 42px 42px 0;
+}
+img.newsimage{
+	width: 100%;
+	list-style: none;
+	margin: 2em;
+}
+
+/* Basic Card Management */
+
+.newscard {
+	position: relative;
+	width: 100%;
+	list-style: none;
+}
+.contactcard{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+	width: 75%;
+	list-style: none;
+	margin-bottom: 6em;
+}
+
+.cardcontainer {
+	padding: 4px 42px;
+	margin: 4em;
+    background-color: rgba(25, 31, 31, 1);
+}
+
+.newscontainer {
+	position: absolute;
+    bottom: 2em;
+    right: 16px;
+    width: 60%;
+	padding: 0 16px;
+    background-color: rgba(25, 31, 31, 0.9);
+}
+
+
+/* Footer Preview Column Orientation */
+
+.column {
+	float: left;
+	width: 23%;
+	margin: 1%;
+}
+
+
+.row{
+	position
+}
+
+.preview {
+	font-size: 16px;
+	
+}
+
+
