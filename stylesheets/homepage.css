@@ -12,56 +12,96 @@ Victus Technologies
 
 .articlecolumnleft {
     float: left;
-    width: 43%;
-    margin-left: 5em;
+    width: 37%;
+    margin-left: 13.5em;
 }
 
 .articlecolumnright{
     float: right;
-    width: 43%;
-    margin-right: 5em;
+    width: 37%;
+    margin-right: 13.5em;
 }
 
 /*Card Management Overrides [See cardmanager.css]*/
 .cardcontainer {
     position: absolute;
-    bottom: 8px;
-    right: 16px;
-    width: 65%;
+    background-color: rgba(11, 11, 12, 1);
+	width: 50%;
+	height: 50%;
+	bottom: 8px;
+	right: 16px;
+	opacity: .75;
+	clip-path: polygon(100% 0%, 100% 2%, 100% 100%, 0 100%, 0 0%);
 	padding: 0 16px;
-    background-color: rgba(25, 31, 31, 0.9);
+	transition: ease 1s;
+
 }
-.servcardcontainer {
-    position: absolute;
-	top: 2em;
-	left: 50%;
-	z-index: 99;
-	width: 35em;
-	padding: 0 16px;
-    background-color: rgba(25, 31, 31, 1);
-	transform: translate(-50%, -50%);
+
+.contactcard:hover .cardcontainer{
+	opacity: 1;
 }
+
 .contactcard {
     position: relative;
 	margin-bottom: 6em;
+ 	box-shadow: 1px 4px 52px 2px rgba(32,42,36, .75);
+	display: block;
 }
 
-
-
 /* Portfolio Container - Acts as a Slideshow and displays different links */
+
+
 .portcontainer {
+	position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-    width: 80%;   
-    list-style: none;
-	position: relative;
+    width: 82%;   
+	box-shadow: 8px 6px 12px 2px rgba(12,18,18,0.96);
+	transition: ease 1s;
 }
+
+.portcontainer:hover {
+	box-shadow: 8px 6px 12px 2px rgba(18,12,18,0.96);
+
+}
+
+.cutleft {
+	position: absolute;
+	clip-path: polygon(35% 0, 0 0, 0 100%, 65% 100%);
+	transition: 1s ease;
+	filter: grayscale(50%) brightness(.7);
+}
+.cutleft:hover {
+	filter: grayscale(0%) brightness(1);
+}
+
+.cutright{
+	clip-path: polygon(35% 0, 100% 0, 100% 100%, 65% 100%);
+	transition: 1s ease;
+	filter: grayscale(50%) brightness(.7);
+}
+.cutright:hover{
+	filter: grayscale(0%) brightness(1);
+}
+
+.cardimage{
+	filter: grayscale(20%) brightness(.8);
+	transition: 1s ease;
+	box-shadow: 8px 6px 12px 2px rgba(12,18,18,0.96);
+
+}
+.cardimage:hover{
+	filter: grayscale(0%) brightness(1);
+	box-shadow: 8px 6px 12px 2px rgba(18,12,18,0.96);
+
+}
+
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -80,17 +120,49 @@ Victus Technologies
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.caption-container {
-  font-style: italic;
-  font-size: 23px;
+.graphic-caption {
   position: absolute;
-  top: 50%;
-  width: 150px;
+  font-size: 19px;
+  top: 0;
+  left: 2%;
+  width: 25%;
   text-align: center;
-  background-color: rgba(25, 31, 31, 1);
-  padding: 2px 16px;
+  background-color: rgba(18, 18, 22, 1);
   color: white;
+  transition: 1s ease;
+  opacity: .8;
+  overflow: hidden;
+  padding: 32px 0;
+
 }
+
+.web-caption {
+  position: absolute;
+  font-size: 19px;
+  bottom: 0;
+  right: 2%;
+  width: 25%;
+  text-align: center;
+  background-color: rgba(18, 18, 22, 1);
+  color: white;
+  transition: 1s ease;
+  opacity: .8;
+  padding: 32px 0;
+}
+#description1, #description2{
+	font-size: 15px;
+	padding: 0 25px;
+	text-indent: 35px;
+	text-align: left;
+}
+.graphic-caption:hover{
+	opacity: 1;
+}
+
+.web-caption:hover{
+	opacity: 1;
+}
+
 
 .row{
   position: absolute;
@@ -113,4 +185,151 @@ Victus Technologies
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+
+/* News Linking */
+.newslink{
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	color: white;
+	display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+
+.newslink:before, .newslink:after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	background: none;
+	opacity: 0;
+}
+
+.newslink:hover:before{
+  color: #8D927E;
+  left: 4px;
+  opacity: .45;
+  text-shadow: 2px -1px #D5660D;
+  animation: glitch-effect-2 7.2s infinite linear alternate-reverse;
+}
+
+.newslink:hover:after {
+  color: #E2E7D3;
+  opacity: .6;
+  left: -6px;
+  text-shadow: -5px -2px #7F10B8;
+  animation: glitch-effect-2 4.6s infinite linear alternate-reverse;
+}
+
+
+@keyframes glitch-effect-2 {
+  0% {
+    clip: rect(28px, 9999px, 14px, 0);
+  }
+  5% {
+    clip: rect(47px, 9999px, 50px, 0);
+  }
+  10% {
+    clip: rect(58px, 9999px, 59px, 0);
+  }
+  15% {
+    clip: rect(4px, 9999px, 64px, 0);
+  }
+  20% {
+    clip: rect(85px, 9999px, 41px, 0);
+  }
+  25% {
+    clip: rect(90px, 9999px, 15px, 0);
+  }
+  30% {
+    clip: rect(100px, 9999px, 77px, 0);
+  }
+  35% {
+    clip: rect(24px, 9999px, 31px, 0);
+  }
+  40% {
+    clip: rect(44px, 9999px, 46px, 0);
+  }
+  45% {
+    clip: rect(14px, 9999px, 2px, 0);
+  }
+  50% {
+    clip: rect(15px, 9999px, 84px, 0);
+  }
+  55% {
+    clip: rect(69px, 9999px, 13px, 0);
+  }
+  60% {
+    clip: rect(29px, 9999px, 35px, 0);
+  }
+  65% {
+    clip: rect(95px, 9999px, 26px, 0);
+  }
+  70% {
+    clip: rect(87px, 9999px, 93px, 0);
+  }
+  75% {
+    clip: rect(23px, 9999px, 8px, 0);
+  }
+  80% {
+    clip: rect(11px, 9999px, 32px, 0);
+  }
+  85% {
+    clip: rect(15px, 9999px, 2px, 0);
+  }
+  90% {
+    clip: rect(41px, 9999px, 19px, 0);
+  }
+  95% {
+    clip: rect(34px, 9999px, 67px, 0);
+  }
+  100% {
+    clip: rect(82px, 9999px, 12px, 0);
+  }
+}
+
+@keyframes glitch-effect-3 {
+  0% {
+   clip-path: polygon(0 0, 13% 0, 13% 4%, 0 4%);
+  }
+  10% {
+   clip-path: polygon(0 0, 28% 0, 28% 4%, 0 4%);
+  }
+  20% {
+clip-path: polygon(16% 0, 31% 0, 31% 4%, 16% 4%);
+  }
+  30% {
+clip-path: polygon(40% 0, 62% 0, 62% 4%, 40% 4%);
+  }
+  40% {
+clip-path: polygon(40% 0, 82% 0, 82% 4%, 40% 4%);
+  }
+  50% {
+clip-path: polygon(97% 0, 100% 0, 100% 4%, 97% 4%);
+  }
+  60% {
+clip-path: polygon(97% 0, 100% 0, 100% 41%, 97% 41%);
+  }
+  70% {
+clip-path: polygon(97% 0, 100% 0, 100% 67%, 97% 61%);
+  }
+  80% {
+clip-path: polygon(98% 54%, 100% 54%, 100% 100%, 98% 100%);
+  }
+  90% {
+clip-path: polygon(98% 94%, 100% 94%, 100% 100%, 98% 100%);
+  }
+  100% {
+clip-path: polygon(42% 97%, 100% 97%, 100% 100%, 42% 100%);
+  }
 }

@@ -6,9 +6,6 @@ Victus Technologies
 
 
 /* Generic Card Management */
-.cardcontainer {
-	padding: 0 16px;
-}
 
 .cardcontainer::after, .row::after{
 	content: "";
@@ -49,6 +46,7 @@ Victus Technologies
 	width: 100%;
 	list-style: none;
 	margin-bottom: 6em;
+	background-color: black;
 }
 
 

@@ -14,21 +14,32 @@ Victus Technologies
 
 .cardcontainer{
 	margin: 1em;
-	background-color: rgba(25, 31, 31, 1)
+	background-color: rgba(45, 41, 41, 1)
 }
 
-img.cardimageleft {
-
+.cardimageleft {
 	padding: 0 16px;
 	width: 25%;
 	float: left;
+	filter: grayscale(40%) brightness(.5) blur(1px);
+	transition: 1s ease;
+
+}
+.cardimageleft:hover{
+	filter: grayscale(0%) brightness(1) blur(0px);
 }
 
-img.cardimageright{
 
+.cardimageright{
 	padding: 0 16px;
 	width: 25%;
 	float: right;
+	filter: grayscale(40%) brightness(.5) blur(1px);
+	transition: 1s ease;
+}
+.cardimageright:hover{
+	filter: grayscale(0%) brightness(1) blur(0px);
+
 }
 
 p.servtext{
@@ -38,17 +49,26 @@ p.servtext{
 }
 
 .servcardcontainerleft {
-	left: 1em;
+	left: 8em;
     position: absolute;
 	z-index: 99;
 	width: 13%;
-    background-color: rgba(25, 31, 31, 1);
+	opacity: 0;
+	transition: 1s ease;
+}
+.servcard:hover .servcardcontainerleft{
+	opacity: 1;
 }
 
 .servcardcontainerright{
-	right: 1em;
+	right: 8em;
     position: absolute;
 	z-index: 99;
 	width: 13%;
-    background-color: rgba(25, 31, 31, 1);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.servcard:hover .servcardcontainerright{
+	opacity: 1;
 }

@@ -27,13 +27,13 @@ p{
 
 /* Image Management */
 
-img.cardimage {
+.cardimage {
 	margin-left: 4em;
 	float: left;
 	width: 550px;
-	padding: 0 42px 42px 0;
+	padding: 3em 1em 1em 3em ;
 }
-img.newsimage{
+.newsimage{
 	width: 100%;
 	list-style: none;
 	margin: 2em;

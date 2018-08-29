@@ -1,36 +1,41 @@
 
 
-.columnleftr1, .columnrightr1 {
-	margin-top: 6em;
+.columnleft, .columnright {
+	margin-top: 1em;
 }
-.columnleftr1{
+.columnleft{
 	margin-left: 5em;
     float: left;
     width: 42%;
 }
 
-.columnrightr1{
+.columnright{
 	margin-right: 5em;
     float: right;
     width: 42%;
 }
 
-.columnleftr2 {
-	margin-left: 5em;
-	float: left;
-	width: 65%;
+.gallery {
+	width: 100%;
+}
+.gallery-content{
+	width: 8%;
+	filter: grayscale(40%) brightness(.5);
+	transition: 1s ease;
+	margin: 1em;
+	vertical-align: middle;
+	box-shadow: 8px 6px 12px 2px rgba(18,21,18,0.96);
+
+}
+.gallery-content:hover{
+	filter: grayscale(0%) brightness(1);
 }
 
-.columnrightr2{
-	margin-right: 5em;
-	float: right;
-	width: 25%;
-}
 
 .cardcontainer{
-
 	margin: 1em;
-	background-color: rgba(25, 31, 31, 1)
+	background-color: rgba(16, 16, 18, 1)
+	
 }
 
 img.cardimage {
@@ -44,19 +49,16 @@ p.servtable{
 	text-align: center;
 	padding: 15px;
 }
-
 p.servtext{
 	padding: 15px;
 
 }
-
 p.italitext{
 	font-size: 14px;
 	font-style: italic;
 }
 
 /* Table Properties */
-
 
 table {
 	float: left;
@@ -67,7 +69,6 @@ table {
 th.rates {
 	font-size: 18px;
 }
-
 td.rates {
 	font-size: 16px;
 }
@@ -75,7 +76,6 @@ td.rates {
 td.rates:nth-child(1){
 	width: 85%;
 }
-
 td.rates, th.rates {
 	border: 2px solid #dddddd;
 	text-align: left;
@@ -87,7 +87,6 @@ td.rates, th.rates {
 tr.rates:nth-child(even) {
     background-color:  rgba(25, 31, 31, 1);
 }
-
 tr.rates:nth-child(odd) {
 		background-color: rgba(41, 49, 49, 1)
 }
@@ -98,15 +97,12 @@ th.hours {
 	font-size: 16px;
 
 }
-
 td.hours {
 	font-size: 14px;
 }
-
 td.hours:nth-child(1){
 	width: 45%;
 }
-
 td.hours, th.hours {
 	border: 2px solid #dddddd;
 	text-align: left;
@@ -119,7 +115,6 @@ td.hours, th.hours {
 tr.hours:nth-child(even) {
     background-color:  rgba(25, 31, 31, 1);
 }
-
 tr.hours:nth-child(odd) {
 		background-color: rgba(41, 49, 49, 1)
 }

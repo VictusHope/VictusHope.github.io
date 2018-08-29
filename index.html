@@ -1,5 +1,5 @@
-<!--
-Jason Hope
+<!--	
+Jason Hope5
 Victus Technologies
 6/29/2018
 -->
@@ -28,94 +28,50 @@ Victus Technologies
 			<img class="slogo" src="images/staticsteady.gif"  alt="Victus Technologies Logo">
 			</a></li>
 		</div>
-  <li><a class="glitch active" data-text="Victus Technologies" href="/index.html">Victus Technologies </a>
-	
-	</li>
+  <li><a class="glitch active" data-text="Victus Technologies" href="/index.html">Victus Technologies </a></li>
   <li><a class="glitch" data-text="About Us" href="/aboutus.html">About Us</a></li>
-  <li><a class="glitch" data-text="Store" href="/store.html">Store</a></li>
-  <li><a class="glitch" data-text="Services" href="/portfolio.html">Services</a></li>
-  <li><a class="glitch" data-text="News" href="/news.html">News</a></li>
-  <li><a class="glitch" data-text="Contract History[Disabled]">Contract History[Disabled]</a></li>
-  <li><a class="glitch" data-text="Archives[Disabled]">Archives[Disabled]</a></li>
-  <li><a class="glitch" data-text="Portal[Disabled]">Portal[Disabled]</a></li>
+  <li><a class="glitch" data-text="Services" href="/services.html">Services</a></li>
+  <li><a class="glitch" data-text="News(Coming Soon)" href="/news.html">News(Coming Soon)</a></li>
 </ul>
+			
+			
 	
 <div class="centerpiece">
-<div class ="servcardcontainer">
-<h2> Victus Technology Services</h2>
-</div>
+<a class="glitchperma" data-text="Victus Technologies Services"> Victus Technologies Services</a>
 	<div class="portcontainer">
-		<div class="portfolio">
-		<img src="images/stock-trainspeed.jpg" style="width:100%">
+		<a href="/services/servicetemplate.html"><img class="cutleft" src="images/victustech-buildingset-1.jpg" style="width:100%"></a>
+		<a href="/services/servicetemplate.html"><img class="cutright" src="images/victustech-q-app.jpg" style="width:100%"></a>
+		<div class="graphic-caption">
+			<h4>Graphic Design</h4>
+			<div id="description1">Some Questionable Text</div>
 		</div>
-		<div class="portfolio">
-		<img src="images/stock-underground.jpg" style="width:100%">
+		<div class="web-caption">
+			<h4>Web Design</h4>
+			<div id="description1">Some Questionable Text</div>
 		</div>
-		<div class="portfolio">
-		<img src="images/stock-keyboard.jpg" style="width:100%">
 		</div>
-		
-		
-		<a class="prev" onclick="plusSlides(-1)">❮</a>
-		<a class="next" onclick="plusSlides(1)">❯</a>
-		
-		<div class="caption-container">
-		<p id="caption"></p></div>
-		
-		<div class="row">
-		<div class="column">
-			<img class="demo cursor" src="images/stock-trainspeed.jpg" style="width: 100px" onclick="currentSlide(1)" alt="Web Design">
-			</div>
-		<div class="column">
-			<img class="demo cursor" src="images/stock-underground.jpg" style="width: 100px"  onclick="currentSlide(2)" alt="App Design">
-			</div>
-		<div class="column">
-			<img class="demo cursor" src="images/stock-keyboard.jpg" style="width: 100px"  onclick="currentSlide(3)" alt="Graphic Design">
-			</div>
-		</div>
-		
-	</div>
 	</div>
 
 <h2>Recent Articles</h2>     
     <div class="articlecolumnleft">
  
 			<div class="contactcard">
-			<img class="cardimage" src="images/jengasiege.jpg">
+			<a href="/articles/articletemplate.html"><img class="cardimage" src="images/victustech-under-bridge.jpg"></a>
 			<div class ="cardcontainer">
-				<h2>Nation Taken By Storm After New Game Jenga Siege Takes Over Urban Nightlife, Locals Not Thrilled.</h2>
+				<a class="newslink" data-text="Nation Taken By Storm After New Game Jenga Siege Takes Over Urban Nightlife, Locals Not Thrilled." href="/articles/articletemplate.html">Nation Taken By Storm After New Game Jenga Siege Takes Over Urban Nightlife, Locals Not Thrilled.</a>
 				<p>"Somebody 'oughta do something about this, man. It's ruined everything that used to be good about going out at night. I'm so tired of going to take a drink and getting nailed by a bean-bag. So tired." </p>
 			</div>
 
 		</div>
-    
-        	<div class="contactcard">
-			<img class="cardimage" src="images/stock-darkhallway.jpg">
-			<div class ="cardcontainer">
-				<h2>Consumers Desire Less Clickbait, We Fail To Deliver</h2>
-				<p>"Lol these dudes won't even make normal articles.  Trash news source.  They have a pretty kickass website though, I might get that dude to make me one"</p>
-			</div>
-
-		</div>
-	
     </div>
             
 
             
     <div class="articlecolumnright">
-			<div class="contactcard">
-			<img class="cardimage" src="images/stock-policesirens.jpg">
+        	<div class="contactcard">
+			<img class="cardimage" src="images/victustech-buildingset-3.jpg">
 			<div class ="cardcontainer">
-				<h2>Sources Say We Need Better Headlines</h2>
-				<p>We Say Fuck You</p>
-			</div>
-
-		</div>
-    
-        			<div class="contactcard">
-			<img class="cardimage" src="images/stock-ambientlight.jpg">
-			<div class ="cardcontainer">
-				<h2>Store Shut Down Temporarily - An Angry Mob Consisting of Three People Outside Our Headquarters</h2>
+				<a class="newslink" data-text="Store Shut Down Temporarily - An Angry Mob Consisting of Three People Outside Our Headquarters" href="/articles/articletemplate.html">Store Shut Down Temporarily - An Angry Mob Consisting of Three People Outside Our Headquarters</a>
 				<p>"We weren't expecting to be selling anything so soon so we had about 128kb of memory allocated to our store.  The first customer to buy something ended up with a $200 bill since he crashed our servers."</p>
 			</div>
 
@@ -124,36 +80,6 @@ Victus Technologies
     </div>
 	
 <!-- Slideshow Script: TODO: Move to seperate script file and call -->
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("portfolio");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
 </div>
 </body>
 </html>
