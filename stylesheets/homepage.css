@@ -125,14 +125,14 @@ Victus Technologies
   font-size: 19px;
   top: 0;
   left: 2%;
-  width: 25%;
+  width: 26%;
   text-align: center;
   background-color: rgba(18, 18, 22, 1);
   color: white;
   transition: 1s ease;
   opacity: .8;
   overflow: hidden;
-  padding: 32px 0;
+  padding: 32px 0 20px;
 
 }
 
@@ -141,18 +141,17 @@ Victus Technologies
   font-size: 19px;
   bottom: 0;
   right: 2%;
-  width: 25%;
+  width: 26%;
   text-align: center;
   background-color: rgba(18, 18, 22, 1);
   color: white;
   transition: 1s ease;
   opacity: .8;
-  padding: 32px 0;
+  padding: 32px 0 20px;
 }
 #description1, #description2{
 	font-size: 15px;
 	padding: 0 25px;
-	text-indent: 35px;
 	text-align: left;
 }
 .graphic-caption:hover{
@@ -231,6 +230,10 @@ Victus Technologies
   animation: glitch-effect-2 4.6s infinite linear alternate-reverse;
 }
 
+h4{
+	padding: 8px;
+	margin: 0;
+}
 
 @keyframes glitch-effect-2 {
   0% {

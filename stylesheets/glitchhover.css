@@ -5,86 +5,18 @@ Victus Technologies
 */
 
 
-/* Glitch Animation Globals */
+/* Navigation*/
 .glitch {
-  position: relative;
-  color: #9CB3BD;
-}
-
-
-
-/* Navigation Bar Glitch Formats */
-a.glitch:before, .glitch:after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  background: none;
-  line-height: 64px;
-  clip: rect(0, 900px, 0, 0);
-}
-a.glitch:hover:before {
-  color: #8D927E;
-  left: 14px;
-  text-shadow: 2px -1px #D5660D;
-  animation: glitch-effect 4.6 infinite linear alternate-reverse;
-}
-a.glitch:hover:after {
-  color: #E2E7D3;
-  left: -2px;
-  text-shadow: -5px -2px #7F10B8;
-  animation: glitch-effect 2.2s infinite linear alternate-reverse;
-}
-
-
-.glitchperma {
 	position: relative;
 	color: #9CB3BD;
-    display: block;
-	text-decoration: none;
-	text-align: center;
 	font-size: 22px;
     display: block;
-	width: 100%;
-	line-height: 64px;
-	padding: auto;
-    text-decoration: none;
+	padding: 0;
 	text-align: center;
+	margin-bottom: .6em;
+	font-weight: bold;
+	text-decoration: none;
 }
-
-
-
-a.glitchperma:before, .glitchperma:after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  background: none;
-  line-height: 64px;
-  clip: rect(0, 900px, 0, 0);
-}
-
-a.glitchperma:before{
-  color: #8D927E;
-  left: 8px;
-  text-shadow: 2px -1px #D5660D;
-  animation: glitch-effect 8.6 infinite linear alternate-reverse;
-}
-
-a.glitchperma:after {
-  color: #E2E7D3;
-  left: -2px;
-  text-shadow: -5px -2px #7F10B8;
-  animation: glitch-effect 12.2s infinite linear alternate-reverse;
-}
-
-
-
-/* Title Glitch Formats */
 .glitch:before, .glitch:after {
   content: attr(data-text);
   position: absolute;
@@ -93,8 +25,7 @@ a.glitchperma:after {
   right: 0;
   overflow: hidden;
   background: none;
-
-  clip: rect(0, 900px, 0, 0);
+  text-decoration: none;
 }
 .glitch:hover:before {
   color: #8D927E;
@@ -109,6 +40,81 @@ a.glitchperma:after {
   animation: glitch-effect 2.2s infinite linear alternate-reverse;
 }
 
+
+/*Title Hovers*/
+
+.glitch2 {
+	position: relative;
+	color: #9CB3BD;
+	font-size: 22px;
+    display: block;
+	padding: 0;
+	text-align: center;
+	margin-bottom: .6em;
+	text-decoration: none;
+}
+.glitch2:before, .glitch2:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: none;
+  text-decoration: none;
+}
+.glitch2:hover:before {
+  color: #8D927E;
+  left: 14px;
+  text-shadow: 2px -1px #D5660D;
+  animation: glitch-effect 8.8s infinite linear alternate-reverse;
+}
+.glitch2:hover:after {
+  color: #E2E7D3;
+  left: -3px;
+  text-shadow: -5px -2px #7F10B8;
+  animation: glitch-effect 4.2s infinite linear alternate-reverse;
+}
+
+
+
+
+
+/* non-hover glitch animation */
+
+.glitchperma {
+	position: relative;
+	color: #9CB3BD;
+	font-size: 22px;
+    display: block;
+	padding: 0;
+	text-align: center;
+	margin-bottom: .6em;
+	font-weight: bold;
+	text-decoration: none;
+}
+.glitchperma:before, .glitchperma:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: none;
+  clip: rect(0, 900px, 0, 0);
+}
+.glitchperma:before{
+  color: #8D927E;
+  left: 8px;
+  text-shadow: 2px -1px #D5660D;
+  animation: glitch-effect 8.6 infinite linear alternate-reverse;
+}
+.glitchperma:after {
+  color: #E2E7D3;
+  left: -2px;
+  text-shadow: -5px -2px #7F10B8;
+  animation: glitch-effect 12.2s infinite linear alternate-reverse;
+}
 
 
 /* Glitch Animation Variations */
