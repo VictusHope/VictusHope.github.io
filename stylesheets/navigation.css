@@ -5,6 +5,7 @@ Victus Technologies
 */
 
 /* Standard styles that apply to whole page */
+
 #page{
 	box-sizing: border-box;
 	content: "";
@@ -14,21 +15,18 @@ Victus Technologies
 	z-index: -1;
 	top: 0;
 	left: 0;
-	background: linear-gradient(25deg, rgba(20, 20, 22, .4), rgba(18, 18, 20, .7), rgba(16, 16, 18, .9));
+	background: linear-gradient(25deg, rgba(20, 20, 22, .4), rgba(18, 18, 20, .7), rgba(16, 16, 18, .9)) fixed;
 }
-
 body {
 	z-index: -2;
 	background: url(imagecalls/background5.jpg);
 	padding: 0;
 	margin: 0;
 }
-
 h2 {
 	color: white;
 	text-align: center;
 }
-
 
 /* Logo Animation */
 .header{
@@ -54,7 +52,6 @@ h2 {
 .header:hover .alogo{
 	display: inline;
 }
-
 
 
 /* Navigation Bar, Centered */ 

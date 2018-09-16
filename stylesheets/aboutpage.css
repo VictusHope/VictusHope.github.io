@@ -30,8 +30,20 @@ Victus Technologies
 .contactcard {
     position: relative;
 	box-shadow: 8px 6px 12px 2px rgba(18,21,18,0.96);
-    border: 1px solid #ccc;
 
+}
+
+.simage{
+	
+	width: 500px;
+}
+
+.himage{
+	width: 500px;
+}
+
+.mimage{
+	width: 100%;
 }
 
 .contact{
@@ -43,17 +55,34 @@ Victus Technologies
 	transform: translate(50%);
 }
 
-.cardcontainer {
-	opacity: .45;
+.scardcontainer {
 	border: 6px double #000000;
     position: absolute;
-	top: 0;
-	right: 0;
-	width: 75%;
+	top: 0px;
+	right: -100px;
+	width: 310px;
+	height: 464px;
 	padding: 14px;
-    background-color: rgba(11, 18, 12, 0.85);
+    background-color: rgba(11, 13, 12, 1);
 	transition: 1s ease;
 	overflow: hidden;
+}
+
+.hcardcontainer {
+	border: 6px double #000000;
+    position: absolute;
+	top: 0px;
+	left: -100px;
+	width: 310px;
+	height: 464px;
+	padding: 14px;
+    background-color: rgba(11, 13, 12, 1);
+	transition: 1s ease;
+	overflow: hidden;
+}
+
+.chelpH{
+	margin-left: 6em;
 }
 
 .cardcontainer:hover{
@@ -61,13 +90,12 @@ Victus Technologies
 }
 
 
-.missioncardcontainer {
-	opacity: .85;
+.missioncardcontainer {;
 	border: 6px double #000000;
 	position: absolute;
 	top: 25%;
 	padding: 8px;
-    background-color: rgba(11, 18, 12, 0.85);
+    background-color: rgba(11, 13, 12, .9);
 	transition: 1s ease;
 	overflow: hidden;
 }

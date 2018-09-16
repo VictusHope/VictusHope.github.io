@@ -5,17 +5,26 @@ Victus Technologies
 */
 
 /* Column Management */
+.showcaselink{
+	font-size: 13px;
+	color: white;
+	text-decoration: none;
+	font-style: italic;
+}
+.showcaselink:hover{
+	text-decoration: underline;
+}
+
+
 .centerpiece{
 	position: relative;
 	margin: 2em;
 }
-
 .articlecolumnleft {
     float: left;
     width: 37%;
     margin-left: 13.5em;
 }
-
 .articlecolumnright{
     float: right;
     width: 37%;
@@ -27,25 +36,34 @@ Victus Technologies
     position: absolute;
     background-color: rgba(11, 11, 12, 1);
 	width: 50%;
-	height: 50%;
+	height: auto;
 	bottom: 8px;
 	right: 16px;
 	opacity: .75;
 	clip-path: polygon(100% 0%, 100% 2%, 100% 100%, 0 100%, 0 0%);
-	padding: 0 16px;
+	padding:16px;
 	transition: ease 1s;
 
 }
-
+.titlecontainer{
+	position: absolute;
+	background-color: rgba(11, 11, 12, 1);
+	top: 0px;
+	opacity: .75;
+	clip-path: polygon(100% 0%, 100% 2%, 100% 100%, 0 100%, 0 0%);
+	padding: 16px;
+	transition: ease 1s;
+}
 .contactcard:hover .cardcontainer{
 	opacity: 1;
 }
-
 .contactcard {
-    position: relative;
+	position: relative;
 	margin-bottom: 6em;
  	box-shadow: 1px 4px 52px 2px rgba(32,42,36, .75);
 	display: block;
+	
+
 }
 
 /* Portfolio Container - Acts as a Slideshow and displays different links */
@@ -77,6 +95,7 @@ Victus Technologies
 }
 
 .cutright{
+	position: relative;
 	clip-path: polygon(35% 0, 100% 0, 100% 100%, 65% 100%);
 	transition: 1s ease;
 	filter: grayscale(50%) brightness(.7);
@@ -86,7 +105,7 @@ Victus Technologies
 }
 
 .cardimage{
-	filter: grayscale(20%) brightness(.8);
+	filter: grayscale(70%) brightness(.6);
 	transition: 1s ease;
 	box-shadow: 8px 6px 12px 2px rgba(12,18,18,0.96);
 
@@ -97,29 +116,20 @@ Victus Technologies
 
 }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+img.showcase{
+	width: 100%;
+	filter: grayscale(15%) brightness(.4);
+	transition: 1s ease;
+	box-shadow: 8px 6px 12px 2px rgba(12,18,18,0.96);
 }
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+img.showcase:hover{
+	filter: grayscale(50%) brightness(.8);
+	box-shadow: 8px 6px 12px 2px rgba(18,12,18,0.96);
+
 }
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+
+
+
 .graphic-caption {
   position: absolute;
   font-size: 19px;
@@ -135,7 +145,6 @@ Victus Technologies
   padding: 32px 0 20px;
 
 }
-
 .web-caption {
   position: absolute;
   font-size: 19px;
@@ -154,10 +163,10 @@ Victus Technologies
 	padding: 0 25px;
 	text-align: left;
 }
+
 .graphic-caption:hover{
 	opacity: 1;
 }
-
 .web-caption:hover{
 	opacity: 1;
 }
@@ -169,7 +178,6 @@ Victus Technologies
   left: 50%;
   transform: translate(-50%);
 }
-
 .row:after {
   content: "";
   display: table;
@@ -201,8 +209,6 @@ Victus Technologies
     margin-right: 0;
     font-weight: bold;
 }
-
-
 .newslink:before, .newslink:after {
 	content: attr(data-text);
 	position: absolute;
@@ -213,7 +219,6 @@ Victus Technologies
 	background: none;
 	opacity: 0;
 }
-
 .newslink:hover:before{
   color: #8D927E;
   left: 4px;
@@ -221,7 +226,6 @@ Victus Technologies
   text-shadow: 2px -1px #D5660D;
   animation: glitch-effect-2 7.2s infinite linear alternate-reverse;
 }
-
 .newslink:hover:after {
   color: #E2E7D3;
   opacity: .6;
@@ -230,9 +234,42 @@ Victus Technologies
   animation: glitch-effect-2 4.6s infinite linear alternate-reverse;
 }
 
+
+/* Headers */
+h2{
+	padding: 8px;
+	margin: 0;
+}
 h4{
 	padding: 8px;
 	margin: 0;
+}
+
+.title {
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	text-indent: 0;
+	text-decoration: none;
+}
+
+.title:hover{
+	text-decoration: underline;
+}
+
+.author {
+	font-size: 12px;
+	font-style: italic;
+	text-indent: 0;
+}
+
+p{
+	text-align: center;
+	line-height: 1;
+	padding: 0px;
+	font-size: 17px;
+	color: #E2E7D3;
+	text-shadow: 2px 3px black;
 }
 
 @keyframes glitch-effect-2 {

@@ -11,15 +11,25 @@ Victus Technologies
 .title {
 	font-size: 24px;
 	font-style: bold;
+	text-indent: 0;
 }
 
 .author {
-	font-size: 14px;
-	font-style: bold;
+	font-size: 12px;
+	font-style: italic;;
+	text-indent: 0;
 }
 
 p{
+	font-size: 16px;
 	color: #E2E7D3;
+	text-indent: 0px;
+	text-shadow: 2px 3px black;
+}
+
+p.ital{
+	font-style: italic;
+	text-indent: 0px;
 }
 
 
@@ -31,7 +41,7 @@ p{
 	margin-left: 4em;
 	float: left;
 	width: 550px;
-	padding: 3em 1em 1em 3em ;
+	padding: 2em 1em 1em 2em ;
 }
 .newsimage{
 	width: 100%;
@@ -59,35 +69,5 @@ p{
 .cardcontainer {
 	padding: 4px 42px;
 	margin: 4em;
-    background-color: rgba(25, 31, 31, 1);
+    background-color: rgba(15, 18, 15, 1);
 }
-
-.newscontainer {
-	position: absolute;
-    bottom: 2em;
-    right: 16px;
-    width: 60%;
-	padding: 0 16px;
-    background-color: rgba(25, 31, 31, 0.9);
-}
-
-
-/* Footer Preview Column Orientation */
-
-.column {
-	float: left;
-	width: 23%;
-	margin: 1%;
-}
-
-
-.row{
-	position
-}
-
-.preview {
-	font-size: 16px;
-	
-}
-
-

@@ -5,8 +5,6 @@ Victus Technologies
 */
 
 /* Column Management */
-.columnleft, .columnright {
-}
 .column{
     float: left;
     width: 30%;
@@ -21,26 +19,26 @@ Victus Technologies
 	padding: 0 16px;
 	width: 25%;
 	float: left;
-	filter: grayscale(40%) brightness(.5) blur(1px);
+	filter: grayscale(45%) brightness(.45);
 	transition: 1s ease;
 
 }
-.cardimageleft:hover{
-	filter: grayscale(0%) brightness(1) blur(0px);
-}
-
 
 .cardimageright{
 	padding: 0 16px;
 	width: 25%;
 	float: right;
-	filter: grayscale(40%) brightness(.5) blur(1px);
+	filter: grayscale(45%) brightness(.45);
 	transition: 1s ease;
 }
-.cardimageright:hover{
-	filter: grayscale(0%) brightness(1) blur(0px);
 
+.cardimageleft:hover{
+	filter: grayscale(0%) brightness(1);
 }
+.cardimageright:hover{
+	filter: grayscale(0%) brightness(1);
+}
+
 
 p.servtext{
 	margin: 1em;
@@ -49,26 +47,19 @@ p.servtext{
 }
 
 .servcardcontainerleft {
-	left: 8em;
+	left: 1em;
     position: absolute;
 	z-index: 99;
 	width: 13%;
-	opacity: 0;
-	transition: 1s ease;
-}
-.servcard:hover .servcardcontainerleft{
 	opacity: 1;
+	transition: 1s ease;
 }
 
 .servcardcontainerright{
-	right: 8em;
+	right: 1em;
     position: absolute;
 	z-index: 99;
 	width: 13%;
-	opacity: 0;
-	transition: 1s ease;
-}
-
-.servcard:hover .servcardcontainerright{
 	opacity: 1;
+	transition: 1s ease;
 }

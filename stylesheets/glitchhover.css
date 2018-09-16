@@ -4,12 +4,16 @@ Victus Technologies
 6/29/2018
 */
 
+@font-face{
+	font-family: "enoch";
+    src: url("../stylesheets/fonts/enoch.ttf") format("truetype");
+}
+
 
 /* Navigation*/
 .glitch {
 	position: relative;
 	color: #9CB3BD;
-	font-size: 22px;
     display: block;
 	padding: 0;
 	text-align: center;
@@ -28,12 +32,16 @@ Victus Technologies
   text-decoration: none;
 }
 .glitch:hover:before {
+  font-family: "enoch";
+  font-size: 13px;
   color: #8D927E;
   left: 14px;
   text-shadow: 2px -1px #D5660D;
   animation: glitch-effect 5s infinite linear alternate-reverse;
 }
 .glitch:hover:after {
+  font-family: "enoch";
+  font-size: 13px;
   color: #E2E7D3;
   left: -3px;
   text-shadow: -5px -2px #7F10B8;
@@ -64,16 +72,26 @@ Victus Technologies
   text-decoration: none;
 }
 .glitch2:hover:before {
+  font-family: "enoch";
+  font-size: 18px;
   color: #8D927E;
   left: 14px;
   text-shadow: 2px -1px #D5660D;
-  animation: glitch-effect 8.8s infinite linear alternate-reverse;
+  animation: glitch-effect 5s infinite linear alternate-reverse;
+  text-decoration: underline;
 }
 .glitch2:hover:after {
+  font-size: 18px;
+  font-family: "enoch";
   color: #E2E7D3;
   left: -3px;
   text-shadow: -5px -2px #7F10B8;
-  animation: glitch-effect 4.2s infinite linear alternate-reverse;
+  animation: glitch-effect 2.2s infinite linear alternate-reverse;
+  text-decoration: underline;
+}
+
+.glitch2:hover{
+	text-decoration: underline;
 }
 
 
@@ -104,12 +122,14 @@ Victus Technologies
   clip: rect(0, 900px, 0, 0);
 }
 .glitchperma:before{
+  font-family: "enoch";
   color: #8D927E;
   left: 8px;
   text-shadow: 2px -1px #D5660D;
   animation: glitch-effect 8.6 infinite linear alternate-reverse;
 }
 .glitchperma:after {
+  font-family: "enoch";
   color: #E2E7D3;
   left: -2px;
   text-shadow: -5px -2px #7F10B8;
